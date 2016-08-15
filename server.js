@@ -21,7 +21,11 @@ app.get('/about',middleware.requireAuthentication, function (req, res) {
 
 app.get('/contact', function (req, res) {
 	res.send('Contact');
-})
+});
+
+app.get('/projects', function (req, res) {
+	res.send('Projects');
+});
 
 app.use(express.static(__dirname + '/public'));
 //shows my website in node.js app
